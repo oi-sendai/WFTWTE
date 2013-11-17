@@ -73,11 +73,6 @@ console.log(item);
       this.start(); // not all views are self-rendering. This one is.
     },
 
-    // render: function(){
-      
-    //   $(this.el).append("<ul> <li>hello world</li> </ul>");
-    // },
-
     afterInterval: function() {
 
       var then = moment('2012-12-21 11:11').format("X") //format("dddd, MMMM Do YYYY, h:mm:ss a");
@@ -103,7 +98,7 @@ console.log(item);
 
     renderInterval: function(item){
 
-      $(this.el).html(item.get('days')+' days '+item.get('days')+' hours '+item.get('minutes')+' minutes '+item.get('seconds')+' seconds'); 
+      $(this.el).html(item.get('days')+' days '+item.get('hours')+' hours '+item.get('minutes')+' minutes '+item.get('seconds')+' seconds'); 
     },
 
     start: function() {
