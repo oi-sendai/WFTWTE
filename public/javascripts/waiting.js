@@ -97,8 +97,8 @@ console.log(item);
     },
 
     renderInterval: function(item){
-
-      $(this.el).html(item.get('days')+' days '+item.get('hours')+' hours '+item.get('minutes')+' minutes '+item.get('seconds')+' seconds'); 
+      
+      $(this.el).html(item.get('days')+' days '+item.get('hours')+' hours '+item.get('minutes')+' minutes '+item.get('seconds')+' seconds'+' waiting for the world to end'); 
     },
 
     start: function() {
